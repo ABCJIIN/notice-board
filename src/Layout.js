@@ -16,7 +16,10 @@ function Layout() {
       <main>
         <Outlet />
       </main>
-      <footer>
+      <footer
+        style={{
+          height:"200px"
+        }}>
         <button
           style={{
             background: "white",

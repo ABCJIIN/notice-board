@@ -21,10 +21,15 @@ function Write({ onInsert }) {
   return (
     <div className="writePage">
       <form className="writeInsert" onSubmit={onSubmit}>
-        <input
+        <input className="boardTitle"
           placeholder="제목을 입력하세요"
           value={value}
           onChange={onChange}
+        />
+        <input className="boardDetail"
+          placeholder="내용을 입력하세요"
+          // value={value}
+          // onChange={onChange}
         />
         <button type="submit">submit</button>
       </form>

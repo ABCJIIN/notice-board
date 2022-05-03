@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path="/postView" element={<PostView />} />
+        <Route path="/postView/:no" element={<PostView />} />
         <Route path="/" element={<PostMain />} />
         <Route path="/write" element={<Write />} />
       </Route>

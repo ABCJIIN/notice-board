@@ -3,15 +3,22 @@
 }
 
 .writeInsert {
-  width: 700px;
+  width: 900px;
   height: 500px;
   margin: 0 auto;
 }
 
-.writeInsert > input {
-  width: 300px;
+.writeInsert > .boardTitle {
+  width: 500px;
   height: 30px;
-  margin: 100px auto;
+  margin: 100px auto 50px auto;
+  display: flex;
+}
+
+.writeInsert > .boardDetail {
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -24,5 +31,5 @@
   border-radius: 50px;
   font-size: 20px;
   display: block;
-  margin: 50px auto;
+  margin: 30px auto 0px auto;
 }

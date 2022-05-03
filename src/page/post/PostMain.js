@@ -5,7 +5,7 @@ function PostMain(props) {
   return (
     <>
       <h1 style={{ margin: "50px auto 50px auto", textAlign: "center" }}>
-        notice board
+        Notice board
       </h1>
       <PostList />;
     </>
