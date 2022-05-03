@@ -1,15 +1,18 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./Layout";
 import PostMain from "./page/post/PostMain";
 import PostView from "./page/post/PostView";
+import Write from "./page/post/Write";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Route exact path="/postView/:no" component={PostView} />
-        <Route exact path="/" component={PostMain} />
-      </BrowserRouter>
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/postView" element={<PostView />} />
+        <Route path="/" element={<PostMain />} />
+        <Route path="/write" element={<Write />} />
+      </Route>
+    </Routes>
   );
 }
 

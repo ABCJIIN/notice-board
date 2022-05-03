@@ -1,11 +1,12 @@
 import React from "react";
 import PostList from "./PostList";
-// import { withRouter } from "react-router-dom";
 
 function PostMain(props) {
   return (
     <>
-      <h2 align="center">게시판</h2>
+      <h1 style={{ margin: "50px auto 50px auto", textAlign: "center" }}>
+        notice board
+      </h1>
       <PostList />;
     </>
   );
